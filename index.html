@@ -17,6 +17,16 @@
 <body>
     <main class="simple-page">
         <h1 class="page-title">Pick Players</h1>
+        <div class="stats">
+            <div>Players: <strong id="statTotal">0/11</strong></div>
+            <div>Credits Left: <strong id="statCredits">100.0</strong></div>
+            <div class="roles">
+                <span>BAT <strong id="statBAT">0</strong></span>
+                <span>WK <strong id="statWK">0</strong></span>
+                <span>AR <strong id="statAR">0</strong></span>
+                <span>BWL <strong id="statBWL">0</strong></span>
+            </div>
+        </div>
 
         <section class="role-section" data-role="Batsman">
             <h2 class="role-title">Pick 3–7 Batsman</h2>
@@ -38,8 +48,8 @@
             <div class="list" id="list-bowler"></div>
         </section>
 
-        <div id="validationMsg" class="validation center"></div>
-        <div class="proceed-wrap">
+        <div class="action-bar">
+            <div id="validationMsg" class="validation"></div>
             <button id="continueBtn" class="proceed" disabled>Proceed</button>
         </div>
     </main>

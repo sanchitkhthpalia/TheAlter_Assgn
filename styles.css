@@ -18,6 +18,9 @@ body {
 }
 .simple-page { max-width: 760px; margin: 0 auto; padding: 20px; }
 .page-title { text-align: center; font-size: 22px; margin: 12px 0 20px; }
+.stats { display: flex; gap: 16px; align-items: center; justify-content: space-between; background: var(--surface); border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; color: var(--muted); }
+.stats strong { color: var(--text); }
+.stats .roles { display: flex; gap: 12px; }
 
 .role-section { margin: 18px 0 26px; }
 .role-title { font-size: 18px; font-weight: 600; margin: 0 0 10px; }
@@ -30,9 +33,9 @@ body {
 .row button.selected { background: #111827; color: #ffffff; }
 .row button:disabled { opacity: .6; cursor: not-allowed; }
 
-.validation.center { color: var(--danger); text-align: center; min-height: 22px; margin-top: 4px; }
-.proceed-wrap { display: flex; justify-content: center; }
-.proceed { width: 90%; max-width: 700px; background: #111827; color: #ffffff; padding: 14px 16px; border-radius: 6px; border: 1px solid #111827; font-weight: 600; cursor: pointer; margin: 10px 0 26px; }
+.action-bar { position: sticky; bottom: 0; left: 0; right: 0; display: flex; gap: 12px; align-items: center; justify-content: space-between; background: var(--surface); border-top: 1px solid #e5e7eb; padding: 10px 12px; margin-top: 12px; }
+.validation { color: var(--danger); min-height: 22px; }
+.proceed { background: #111827; color: #ffffff; padding: 12px 16px; border-radius: 6px; border: 1px solid #111827; font-weight: 600; cursor: pointer; }
 .proceed:disabled { opacity: .5; cursor: not-allowed; }
 
 

@@ -145,6 +145,16 @@ function updateUI() {
   renderList(document.getElementById('list-bowler'), groups['Bowler']);
   showValidation();
   document.getElementById('continueBtn').disabled = !isValid();
+  // stats bar
+  const c = counts();
+  const creditsLeft = (LIMITS.maxCredits - c.credits).toFixed(1);
+  const setText = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+  setText('statTotal', `${c.total}/${LIMITS.totalPlayers}`);
+  setText('statCredits', creditsLeft);
+  setText('statBAT', String(c.byRole['Batsman']));
+  setText('statWK', String(c.byRole['Wicket-Keeper']));
+  setText('statAR', String(c.byRole['All-Rounder']));
+  setText('statBWL', String(c.byRole['Bowler']));
 }
 
 function proceed() {
