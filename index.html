@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Players</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <style>
+        /* Fallback minimal styles if styles.css fails to load */
+        .hidden{display:none}
+    </style>
+    </head>
+<body>
+    <main class="simple-page">
+        <h1 class="page-title">Pick Players</h1>
+
+        <section class="role-section" data-role="Batsman">
+            <h2 class="role-title">Pick 3–7 Batsman</h2>
+            <div class="list" id="list-batsman"></div>
+        </section>
+
+        <section class="role-section" data-role="Wicket-Keeper">
+            <h2 class="role-title">Pick 1–5 Wicket keepers</h2>
+            <div class="list" id="list-wicket"></div>
+        </section>
+
+        <section class="role-section" data-role="All-Rounder">
+            <h2 class="role-title">Pick 0–4 All Rounders</h2>
+            <div class="list" id="list-allrounder"></div>
+        </section>
+
+        <section class="role-section" data-role="Bowler">
+            <h2 class="role-title">Pick 3–7 Bowlers</h2>
+            <div class="list" id="list-bowler"></div>
+        </section>
+
+        <div id="validationMsg" class="validation center"></div>
+        <div class="proceed-wrap">
+            <button id="continueBtn" class="proceed" disabled>Proceed</button>
+        </div>
+    </main>
+</body>
+</html>
+
+
