@@ -69,6 +69,3 @@ If you want to fetch from a URL instead, replace the inline constant with a fetc
 - Layout: headings and section order are in `index.html`.
 - Data: modify or replace the `ALL_PLAYERS` array in `app.js`.
 
-## Notes
-- This is intentionally framework‑free for quick review and portability.
-- For production, consider extracting data, adding tests, and persisting teams server‑side.
