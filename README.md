@@ -1,6 +1,6 @@
 # Pick Squad - Fantasy Team Selector
 
-A lightweight, static web app to pick a fantasy cricket squad of 11 players while enforcing credit, role, and team constraints. Built with plain HTML/CSS/JS—no build step required.
+A lightweight, static web app to pick a fantasy cricket squad of 11 players while enforcing credit, role, and team constraints. Built with HTML/CSS/JS—no build step required.
 
 ## Features
 - Enforces all rules in real-time:
