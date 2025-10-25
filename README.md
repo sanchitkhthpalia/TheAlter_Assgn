@@ -37,7 +37,7 @@ No server or installation is required.
 
 ### 3) View summary
 - Click "Proceed" to navigate to `summary.html`.
-- The summary page displays the 11 selected players with role and team.
+- The summary page displays the 11 selected players with their roles and team.
 
 ## Tech & Structure
 - Plain HTML, CSS, and JavaScript. Data is embedded as a constant array.
@@ -46,7 +46,7 @@ No server or installation is required.
   - `styles.css` — light theme and layout styles
   - `app.js` — rendering, selection state, and constraint validation
   - `summary.html` — displays the final 11
-  - `summary.js` — reads selections from `sessionStorage` and renders list
+  - `summary.js` — reads selections from `sessionStorage` and renders a list
 
 ## Data Source
 Player data is the provided "All Players JSON" (embedded in `app.js`).
@@ -65,7 +65,7 @@ If you want to fetch from a URL instead, replace the inline constant with a fetc
 - Proceed is enabled only when all final constraints are met, including role minimums and exactly 11 players.
 
 ## Customization
-- Styling: adjust colors and spacing in `styles.css`.
+- Styling: adjust colours and spacing in `styles.css`.
 - Layout: headings and section order are in `index.html`.
 - Data: modify or replace the `ALL_PLAYERS` array in `app.js`.
 
